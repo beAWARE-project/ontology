@@ -1,0 +1,982 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/skontopo/ontologies/2017/10/untitled-ontology-61#"
+     xml:base="http://www.semanticweb.org/skontopo/ontologies/2017/10/untitled-ontology-61"
+     xmlns:untitled-ontology-61="http://www.semanticweb.org/skontopo/ontologies/2017/10/untitled-ontology-61#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:beAWARE_ontology="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#associatedWithClimateCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#associatedWithClimateCondition">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Parameter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ClimateCondition"/>
+        <rdfs:label>associated with climate condition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#characterizedByParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#characterizedByParameter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#characterizesDisasterType"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Parameter"/>
+        <rdfs:label>characterized by parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#characterizesDisasterType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#characterizesDisasterType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Parameter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:label>characterizes disaster type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#detectedIncident -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#detectedIncident">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#incidentDetectedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:label>detected incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#detectedParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#detectedParticipant">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#participantDetectedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>detected participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasClimateCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasClimateCondition">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToNaturalDisaster"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ClimateCondition"/>
+        <rdfs:label>has climate condition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasDisasterLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasDisasterLocation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfDisaster"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location"/>
+        <rdfs:label>has disaster location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasImpactOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasImpactOn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isImpactedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>has impact on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasIncidentImpact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasIncidentImpact">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isImpactOfIncident"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact"/>
+        <rdfs:label>has incident impact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasIncidentLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasIncidentLocation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfIncident"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location"/>
+        <rdfs:label>has incident location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMediaLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMediaLocation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfMedia"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location"/>
+        <rdfs:label>has media location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasNaturalDisaster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasNaturalDisaster">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isOfType"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisaster"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasParameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ClimateCondition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Parameter"/>
+        <rdfs:label>has parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasResponderLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasResponderLocation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfResponder"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Responder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location"/>
+        <rdfs:label>has responder location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#incidentDetectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#incidentDetectedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Detection"/>
+        <rdfs:label>incident detected by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#involvedInIncident -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#involvedInIncident">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#involvesParticipant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:label>InvolvedInIncident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#involvesParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#involvesParticipant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>involves participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isAssignedMission -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isAssignedMission">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isAssignedToResponder"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Responder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Mission"/>
+        <rdfs:label>is assigned mission</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isAssignedToResponder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isAssignedToResponder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Responder"/>
+        <rdfs:label>is assigned to responder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isImpactOfIncident -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isImpactOfIncident">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:label>is impact of incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isImpactedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isImpactedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact"/>
+        <rdfs:label>is impacted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfDisaster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfDisaster">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:label>is location of disaster</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfIncident -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfIncident">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:label>is location of incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfMedia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfMedia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:label>is location of media</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfResponder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isLocationOfResponder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Responder"/>
+        <rdfs:label>is location of responder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isOfType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isOfType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:label>is of type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#isResultOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#leadsTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:label>is result of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#leadsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#leadsTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:label>leads to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#participantDetectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#participantDetectedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Detection"/>
+        <rdfs:label>participant detected by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#producedByTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#producedByTask">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#producesDataset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Dataset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Task"/>
+        <rdfs:label>produced by task</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#producesDataset -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#producesDataset">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Dataset"/>
+        <rdfs:label>produces dataset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:label>relates to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToIncident -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToIncident">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToMission"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:label>relates to incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToMediaItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToMediaItem">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToTask"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:label>relates to media item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToMission -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToMission">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Mission"/>
+        <rdfs:label>relates to mission</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToNaturalDisaster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToNaturalDisaster">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ClimateCondition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:label>relates to natural disaster</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#relatesToTask">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Task"/>
+        <rdfs:label>relates to task</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#belongsToCollection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#belongsToCollection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>belongs to collection</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasAnalysisResultsSource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasAnalysisResultsSource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has analysis results source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasAnalyzedMediaSource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasAnalyzedMediaSource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has analyzed media source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasConfidenceScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasConfidenceScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has confidence score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasDetectionEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasDetectionEnd">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has detection end</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasDetectionStart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasDetectionStart">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has detection start</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasDetectionTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasDetectionTimestamp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has detection timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasDisasterStart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasDisasterStart">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has disaster start</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasIncidentPriority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasIncidentPriority">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has incident priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasIncidentSeverity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasIncidentSeverity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has incident severity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMeasurementTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMeasurementTimestamp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ClimateCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has measurement timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMediaItemTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMediaItemTimestamp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has media item timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMediaSource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMediaSource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has media source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMissionEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMissionEnd">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has mission end</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMissionPriority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMissionPriority">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has mission priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMissionStart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMissionStart">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has mission start</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMissionStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasMissionStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has mission status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasUnit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ClimateCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has unit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#hasValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ClimateCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#lat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#lat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has latitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#long -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#long">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has longitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ClimateCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ClimateCondition">
+        <rdfs:label>Climate Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Communications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Communications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Services"/>
+        <rdfs:label>Communications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#CulturalHeritage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#CulturalHeritage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Cultural Heritage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#DataAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#DataAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Task"/>
+        <rdfs:label>Data Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Dataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Dataset">
+        <rdfs:label>Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Death -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Death">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact"/>
+        <rdfs:label>Death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Detection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Detection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Dataset"/>
+        <rdfs:label>Detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Disruption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Disruption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact"/>
+        <rdfs:label>Disruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Services"/>
+        <rdfs:label>Electricity and Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Evacuation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Evacuation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact"/>
+        <rdfs:label>Evacuation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ImageAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ImageAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#DataAnalysis"/>
+        <rdfs:label>Image Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact">
+        <rdfs:label>Impact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Incident">
+        <rdfs:label>Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Injury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Injury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact"/>
+        <rdfs:label>Injury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Livestock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Livestock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Livestock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Location">
+        <rdfs:label>Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MaterialLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MaterialLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Impact"/>
+        <rdfs:label>Material Loss</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#MediaItem">
+        <rdfs:label>Media Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Mission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Mission">
+        <rdfs:label>Mission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisaster">
+        <rdfs:label>Natural Disaster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisasterType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#NaturalDisasterType">
+        <rdfs:label>Natural Disaster Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Parameter">
+        <rdfs:label>Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Population -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Population">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Responder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Responder">
+        <rdfs:label>Responder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Sanitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Sanitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Services"/>
+        <rdfs:label>Water and Sanitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Task">
+        <rdfs:label>Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#TextAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#TextAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#DataAnalysis"/>
+        <rdfs:label>Text Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Services"/>
+        <rdfs:label>Transportation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VideoAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VideoAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#DataAnalysis"/>
+        <rdfs:label>Video Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject">
+        <rdfs:label>Vulnerable Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#WasteRemoval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#WasteRemoval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Services"/>
+        <rdfs:label>Refuse and Waste Removal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Wildlife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Wildlife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Wildlife</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Communications"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Energy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Sanitation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#Transportation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#WasteRemoval"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#ImageAnalysis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#TextAnalysis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#VideoAnalysis"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
