@@ -985,6 +985,33 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoItem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
