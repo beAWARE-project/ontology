@@ -1,13 +1,11 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/skontopo/ontologies/2017/10/untitled-ontology-61#"
-     xml:base="http://www.semanticweb.org/skontopo/ontologies/2017/10/untitled-ontology-61"
-     xmlns:untitled-ontology-61="http://www.semanticweb.org/skontopo/ontologies/2017/10/untitled-ontology-61#"
+<rdf:RDF xmlns="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#"
+     xml:base="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:beAWARE_ontology="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology"/>
     
 
