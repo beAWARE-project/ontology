@@ -5,7 +5,8 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:beAWARE_ontology="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology"/>
     
 
@@ -993,18 +994,19 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_1 -->
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#location_1 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#location_1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_2 -->
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_1 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_2">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoItem"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <beAWARE_ontology:hasMediaLocation rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#location_1"/>
     </owl:NamedIndividual>
     
 
