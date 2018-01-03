@@ -1002,10 +1002,29 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#mission_1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#mission_1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
+        <beAWARE_ontology:hasMissionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complete</beAWARE_ontology:hasMissionStatus>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#unit_1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#unit_1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder"/>
+        <beAWARE_ontology:hasResponderLocation rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#location_1"/>
+        <beAWARE_ontology:isAssignedMission rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#mission_1"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_1 -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#video_1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoItem"/>
         <beAWARE_ontology:hasMediaLocation rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#location_1"/>
     </owl:NamedIndividual>
     
