@@ -1,1 +1,1 @@
-# ontology
+# beAWARE Ontology
