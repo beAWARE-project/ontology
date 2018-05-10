@@ -1,0 +1,1206 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology#"
+     xml:base="http://www.semanticweb.org/skontopo/ontologies/2017/10/beAWARE_ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:beAWARE_ontology="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology">
+        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <terms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</terms:hasVersion>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#causedByDisaster -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#causedByDisaster">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#causesDisasterImpact"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:label>caused by disaster</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#causedByIncident -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#causedByIncident">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#causesIncidentImpact"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType"/>
+        <rdfs:label>caused by incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#causesDisasterImpact -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#causesDisasterImpact">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
+        <rdfs:label>causes disaster impact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#causesIncidentImpact -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#causesIncidentImpact">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
+        <rdfs:label>causes incident impact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#characterizedByParameterType -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#characterizedByParameterType">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#characterizesDisasterType"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameterType"/>
+        <rdfs:label>characterized by parameter type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#characterizesDisasterType -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#characterizesDisasterType">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameterType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:label>characterizes disaster type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#detectsIncident -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#detectsIncident">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#incidentDetectedBy"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:label>detects incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#detectsParticipant -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#detectsParticipant">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#participantDetectedBy"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>detects participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasClimateParameterOccurrence -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasClimateParameterOccurrence">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfClimateParameterType"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameterType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:label>has climate parameter occurrence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterClimateParameter -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterClimateParameter">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToNaturalDisaster"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:label>has disaster climate parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterLocation -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterLocation">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfDisaster"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:label>has disaster location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterOccurrence -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterOccurrence">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfDisasterType"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:label>has disaster occurrence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOccurrence -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOccurrence">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfImpactType"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:label>has impact occurrence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOn -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOn">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactedBy"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>has impact on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentClimateParameter -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentClimateParameter">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isClimateParameterOfIncident"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:label>has incident climate parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentImpact -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentImpact">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactOfIncident"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:label>has incident impact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentLocation -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentLocation">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfIncident"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:label>has incident location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentOccurrence -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentOccurrence">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfIncidentType"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:label>has incident occurrence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMeasurementLocation -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMeasurementLocation">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfMeasurement"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:label>has measurement location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMediaLocation -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMediaLocation">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfMediaItem"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:label>has media location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasResponderLocation -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasResponderLocation">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfResponder"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:label>has responder location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#incidentDetectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#incidentDetectedBy">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
+        <rdfs:label>incident detected by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#involvedInIncident -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#involvedInIncident">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#involvesParticipant"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:label>involved in incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#involvesParticipant -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#involvesParticipant">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>involves participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isAssignedMission -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isAssignedMission">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isAssignedToResponder"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
+        <rdfs:label>is assigned mission</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isAssignedToResponder -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isAssignedToResponder">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder"/>
+        <rdfs:label>is assigned to responder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isClimateParameterOfIncident -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isClimateParameterOfIncident">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:label>is climate parameter of incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactOfIncident -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactOfIncident">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:label>is impact of incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactedBy -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactedBy">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:label>is impacted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfDisaster -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfDisaster">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:label>is location of disaster</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfIncident -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfIncident">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:label>is location of incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfMeasurement -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfMeasurement">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:label>is location of measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfMediaItem -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfMediaItem">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:label>is location of media item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfResponder -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfResponder">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder"/>
+        <rdfs:label>is location of responder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfClimateParameterType -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfClimateParameterType">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameterType"/>
+        <rdfs:label>is of climate parameter type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfDisasterType -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfDisasterType">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:label>is of disaster type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfImpactType -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfImpactType">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
+        <rdfs:label>is of impact type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfIncidentType -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isOfIncidentType">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType"/>
+        <rdfs:label>is of incident type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isResultOf -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isResultOf">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#leadsTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:label>is result of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#leadsTo -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#leadsTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
+        <rdfs:label>leads to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#participantDetectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#participantDetectedBy">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
+        <rdfs:label>participant detected by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#producedByTask -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#producedByTask">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#producesDataset"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dataset"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task"/>
+        <rdfs:label>produced by task</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#producesDataset -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#producesDataset">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dataset"/>
+        <rdfs:label>produces dataset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesTo -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:label>relates to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToIncident -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToIncident">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToMission"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:label>relates to incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToMediaItem -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToMediaItem">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToTask"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:label>relates to media item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToMission -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToMission">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
+        <rdfs:label>relates to mission</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToNaturalDisaster -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToNaturalDisaster">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:label>relates to natural disaster</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToTask -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#relatesToTask">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task"/>
+        <rdfs:label>relates to task</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#belongsToCollection -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#belongsToCollection">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>belongs to collection</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasAnalyzedMediaSource -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasAnalyzedMediaSource">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has analyzed media source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDatasetResultsSource -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDatasetResultsSource">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has dataset results source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionConfidence -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionConfidence">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has detection confidence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionEnd -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionEnd">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has detection end</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionStart -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionStart">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has detection start</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionTimestamp">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has detection timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterEnd -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterEnd">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has disaster end</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterStart -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterStart">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has disaster start</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentPriority -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentPriority">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has incident priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentSeverity -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasIncidentSeverity">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has incident severity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMeasurementTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMeasurementTimestamp">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has measurement timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMediaItemTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMediaItemTimestamp">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has media item timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMissionEnd -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMissionEnd">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has mission end</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMissionPriority -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMissionPriority">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has mission priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMissionStart -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMissionStart">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has mission start</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMissionStatus -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasMissionStatus">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has mission status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasRadius -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasRadius">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label>has radius</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasRawMediaSource -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasRawMediaSource">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has raw media source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasUnit -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasUnit">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has unit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasValue">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#lat -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#lat">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has latitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#long -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#long">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has longitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#AudioItem -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#AudioItem">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:label>Audio Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter">
+        <rdfs:label>Climate Parameter</rdfs:label>
+        <skos:definition>Represents the actual manifestation of a climate parameter measurement.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameterType -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameterType">
+        <rdfs:label>Climate Parameter Type</rdfs:label>
+        <skos:definition>Represents various types of climate-related parameters.</skos:definition>
+        <skos:example>Temperature, humidity, etc.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Communications -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Communications">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services"/>
+        <rdfs:label>Communications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#CulturalHeritage -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#CulturalHeritage">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Cultural Heritage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#DataAnalysis -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#DataAnalysis">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task"/>
+        <rdfs:label>Data Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dataset -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dataset">
+        <rdfs:label>Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Death -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Death">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:label>Death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection">
+        <rdfs:label>Detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Disruption -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Disruption">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:label>Disruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Energy -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Energy">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services"/>
+        <rdfs:label>Electricity and Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Evacuation -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Evacuation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:label>Evacuation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImageAnalysis -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImageAnalysis">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#DataAnalysis"/>
+        <rdfs:label>Image Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImageItem -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImageItem">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:label>Image Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact">
+        <rdfs:label>Impact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType">
+        <rdfs:label>Impact Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident">
+        <rdfs:label>Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType">
+        <rdfs:label>Incident Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Injury -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Injury">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:label>Injury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Livestock -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Livestock">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Livestock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location">
+        <rdfs:label>Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MaterialLoss -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MaterialLoss">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
+        <rdfs:label>Material Loss</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem">
+        <rdfs:label>Media Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission">
+        <rdfs:label>Mission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster">
+        <rdfs:label>Natural Disaster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType">
+        <rdfs:label>Natural Disaster Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Population -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Population">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Property -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Property">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder">
+        <rdfs:label>Responder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Sanitation -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Sanitation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services"/>
+        <rdfs:label>Water and Sanitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task">
+        <rdfs:label>Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#TextAnalysis -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#TextAnalysis">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#DataAnalysis"/>
+        <rdfs:label>Text Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#TextItem -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#TextItem">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:label>Text Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services"/>
+        <rdfs:label>Transportation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoAnalysis -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoAnalysis">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#DataAnalysis"/>
+        <rdfs:label>Video Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoItem -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoItem">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
+        <rdfs:label>Video Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject">
+        <rdfs:label>Vulnerable Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#WasteRemoval -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#WasteRemoval">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services"/>
+        <rdfs:label>Refuse and Waste Removal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Wildlife -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Wildlife">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Wildlife</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#person_1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#person_1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Population"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#AudioItem"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImageItem"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#TextItem"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoItem"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Communications"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Energy"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Sanitation"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#WasteRemoval"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImageAnalysis"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#TextAnalysis"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoAnalysis"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
