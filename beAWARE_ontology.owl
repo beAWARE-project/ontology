@@ -797,11 +797,70 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Agriculture -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Agriculture">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset"/>
+        <rdfs:label>Agriculture</rdfs:label>
+        <skos:definition>Agricultural used spaces.</skos:definition>
+        <skos:example>Field and acre.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Animal -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Animal">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#LivingBeing"/>
+        <rdfs:label>Animal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <owl:disjointWith rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#LivingBeing"/>
+        <rdfs:label>Asset</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#AudioItem -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#AudioItem">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:label>Audio Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Bridge -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Bridge">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure"/>
+        <rdfs:label>Bridge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Building -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Building">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure"/>
+        <rdfs:label>Building</rdfs:label>
+        <skos:definition>A structure with walls and a roof.</skos:definition>
+        <skos:example>A house or factory.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Car -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Car">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Vehicle"/>
+        <rdfs:label>Car</rdfs:label>
     </owl:Class>
     
 
@@ -825,20 +884,11 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Communications -->
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Communication -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Communications">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services"/>
-        <rdfs:label>Communications</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#CulturalHeritage -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#CulturalHeritage">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
-        <rdfs:label>Cultural Heritage</rdfs:label>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Communication">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
+        <rdfs:label>Communication</rdfs:label>
     </owl:Class>
     
 
@@ -860,15 +910,6 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Death -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Death">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
-        <rdfs:label>Death</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection">
@@ -877,11 +918,37 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Disruption -->
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dunes -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Disruption">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
-        <rdfs:label>Disruption</rdfs:label>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dunes">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset"/>
+        <rdfs:label>Dunes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EducationalFacility -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EducationalFacility">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
+        <rdfs:label>Educational Facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ElectricEnergySupply -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ElectricEnergySupply">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Energy"/>
+        <rdfs:label>Electric Energy Supply</rdfs:label>
     </owl:Class>
     
 
@@ -889,17 +956,44 @@
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Energy -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Energy">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services"/>
-        <rdfs:label>Electricity and Energy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
+        <rdfs:label>Energy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Evacuation -->
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#FireDepartment -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Evacuation">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
-        <rdfs:label>Evacuation</rdfs:label>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#FireDepartment">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
+        <rdfs:label>Fire Department</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#GarbageCollection -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#GarbageCollection">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
+        <rdfs:label>Garbage Collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Hospital -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Hospital">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
+        <rdfs:label>Hospital</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Human -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Human">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#LivingBeing"/>
+        <rdfs:label>Human</rdfs:label>
     </owl:Class>
     
 
@@ -954,11 +1048,19 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Injury -->
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Injury">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
-        <rdfs:label>Injury</rdfs:label>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Levee -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Levee">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure"/>
+        <rdfs:label>Levee</rdfs:label>
     </owl:Class>
     
 
@@ -966,8 +1068,17 @@
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Livestock -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Livestock">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Animal"/>
         <rdfs:label>Livestock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#LivingBeing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#LivingBeing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:label>Living Being</rdfs:label>
     </owl:Class>
     
 
@@ -976,15 +1087,6 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location">
         <rdfs:label>Location</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MaterialLoss -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MaterialLoss">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
-        <rdfs:label>Material Loss</rdfs:label>
     </owl:Class>
     
 
@@ -1005,6 +1107,16 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Monument -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Monument">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure"/>
+        <rdfs:label>Monument</rdfs:label>
+        <skos:definition>A structure or building that is built to honour a special person or event.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster">
@@ -1021,11 +1133,29 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Population -->
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalHabitat -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Population">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
-        <rdfs:label>Population</rdfs:label>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalHabitat">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset"/>
+        <rdfs:label>Natural Habitat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Plant -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Plant">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset"/>
+        <rdfs:label>Plant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Police -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Police">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
+        <rdfs:label>Police</rdfs:label>
     </owl:Class>
     
 
@@ -1033,8 +1163,17 @@
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Property -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Property">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset"/>
         <rdfs:label>Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#PublicTransportation -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#PublicTransportation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation"/>
+        <rdfs:label>Public Transportation</rdfs:label>
     </owl:Class>
     
 
@@ -1047,20 +1186,56 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Sanitation -->
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#River -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Sanitation">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services"/>
-        <rdfs:label>Water and Sanitation</rdfs:label>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#River">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset"/>
+        <rdfs:label>River</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services -->
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Sewer -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
-        <rdfs:label>Services</rdfs:label>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Sewer">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
+        <rdfs:label>Sewer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Square -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Square">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure"/>
+        <rdfs:label>Square</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Street -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Street">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation"/>
+        <rdfs:label>Street</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset"/>
+        <rdfs:label>Structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Subway -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Subway">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#PublicTransportation"/>
+        <rdfs:label>Subway</rdfs:label>
     </owl:Class>
     
 
@@ -1094,8 +1269,17 @@
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Transportation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Vehicle -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Vehicle">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Property"/>
+        <rdfs:label>Vehicle</rdfs:label>
     </owl:Class>
     
 
@@ -1122,15 +1306,26 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject">
         <rdfs:label>Vulnerable Object</rdfs:label>
+        <skos:definition>Any living being or object that needs to be protected from hazards.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#WasteRemoval -->
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Wall -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#WasteRemoval">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Services"/>
-        <rdfs:label>Refuse and Waste Removal</rdfs:label>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Wall">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure"/>
+        <rdfs:label>Wall</rdfs:label>
+        <skos:definition>A vertical structure, often made of stone or brick, that divides or surrounds something.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#WaterSupply -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#WaterSupply">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
+        <rdfs:label>Water Supply</rdfs:label>
     </owl:Class>
     
 
@@ -1138,7 +1333,7 @@
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Wildlife -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Wildlife">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Animal"/>
         <rdfs:label>Wildlife</rdfs:label>
     </owl:Class>
     
@@ -1157,9 +1352,7 @@
 
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#person_1 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#person_1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Population"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#person_1"/>
     
 
 
@@ -1178,16 +1371,6 @@
             <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImageItem"/>
             <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#TextItem"/>
             <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoItem"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Communications"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Energy"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Sanitation"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#WasteRemoval"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
