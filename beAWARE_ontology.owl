@@ -562,6 +562,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>belongs to collection</rdfs:label>
+        <skos:definition>Links a media item to one or more collections.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -572,6 +573,8 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label>has analyzed media source</rdfs:label>
+        <skos:definition>Links a media item to a URI pointing to the analysed item.</skos:definition>
+        <skos:example>Processed image or video source.</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -582,6 +585,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label>has dataset results source</rdfs:label>
+        <skos:definition>Points to a URI with the dataset source.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -592,6 +596,8 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>has detection confidence</rdfs:label>
+        <skos:definition>Represents the confidence score of a particular detection.</skos:definition>
+        <skos:example>An image analysis algorithm detects a trapped car in the flood with 80% confidence.</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -602,6 +608,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label>has detection end</rdfs:label>
+        <skos:definition>Indicates the end of the detection.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -612,6 +619,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label>has detection start</rdfs:label>
+        <skos:definition>Indicates the start of the detection.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -622,6 +630,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label>has detection timestamp</rdfs:label>
+        <skos:definition>Represents the timestamp of the detection.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -632,6 +641,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label>has disaster end</rdfs:label>
+        <skos:definition>Indicates the end of the disaster.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -642,6 +652,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label>has disaster start</rdfs:label>
+        <skos:definition>Indicates the start of the disaster.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -652,6 +663,8 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has incident priority</rdfs:label>
+        <skos:definition>Indicates the priority of the incident.</skos:definition>
+        <skos:example>Incidents involving humans in danger are of high priority.</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -662,6 +675,8 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has incident severity</rdfs:label>
+        <skos:definition>Indicates the severity of the incident.</skos:definition>
+        <skos:example>Incidents involving injured or dead people are of high severity.</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -672,6 +687,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label>has measurement timestamp</rdfs:label>
+        <skos:definition>Indicates the timestamp of a climate parameter measurement.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -682,6 +698,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label>has media item timestamp</rdfs:label>
+        <skos:definition>Indicates the timestamp when a media item was created.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -692,6 +709,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label>has mission end</rdfs:label>
+        <skos:definition>Indicates the end of the rescue mission.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -702,6 +720,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has mission priority</rdfs:label>
+        <skos:definition>Indicates the priority of the rescue mission.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -712,6 +731,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label>has mission start</rdfs:label>
+        <skos:definition>Indicates the start of the rescue mission.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -722,6 +742,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has mission status</rdfs:label>
+        <skos:definition>Indicates the current status of the rescue mission.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -732,6 +753,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:label>has radius</rdfs:label>
+        <skos:definition>Indicates the radius around a location. It’s used for representing areas and not points.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -742,6 +764,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label>has raw media source</rdfs:label>
+        <skos:definition>Links a media item to a URI pointing to the raw unprocessed item.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -752,6 +775,9 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has unit</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasValue"/>
+        <skos:definition>Indicates the measurement unit of a climate parameter. Should be used together with property hasValue.</skos:definition>
+        <skos:example>Celsius for temperature measurements.</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -762,6 +788,8 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>has value</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasUnit"/>
+        <skos:definition>Indicates the measurement value of a climate parameter. Should be used together with property hasUnit.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -772,6 +800,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>has latitude</rdfs:label>
+        <skos:definition>Geographic latitude coordinates of a location.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -782,6 +811,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>has longitude</rdfs:label>
+        <skos:definition>Geographic longitude coordinates of a location.</skos:definition>
     </owl:DatatypeProperty>
     
 
