@@ -10,10 +10,73 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:beAWARE_ontology="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology">
-        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <terms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</terms:hasVersion>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -35,6 +98,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
         <rdfs:label>caused by disaster</rdfs:label>
+        <skos:definition>Indicates which disaster type is responsible for this impact type.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -46,6 +110,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType"/>
         <rdfs:label>caused by incident</rdfs:label>
+        <skos:definition>Indicates which incident type has caused this impact type.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -56,6 +121,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
         <rdfs:label>causes disaster impact</rdfs:label>
+        <skos:definition>Indicates which impact type is caused by this natural disaster type.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -66,6 +132,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
         <rdfs:label>causes incident impact</rdfs:label>
+        <skos:definition>Indicates which impact type is caused by this type of incident.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -77,6 +144,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameterType"/>
         <rdfs:label>characterized by parameter type</rdfs:label>
+        <skos:definition>Associates a natural disaster type with a climate parameter type.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -87,6 +155,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameterType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
         <rdfs:label>characterizes disaster type</rdfs:label>
+        <skos:definition>Associates a climate parameter type with a natural disaster type.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -98,6 +167,8 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:label>detects incident</rdfs:label>
+        <skos:definition>Indicates which incidents were detected by a specific detection activity.</skos:definition>
+        <skos:example>A flooding incident, a blocked road etc.</skos:example>
     </owl:ObjectProperty>
     
 
@@ -109,6 +180,8 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
         <rdfs:label>detects participant</rdfs:label>
+        <skos:definition>Indicates which participants were detected by a specific detection activity.</skos:definition>
+        <skos:example>Humans in danger, submerged cars etc.</skos:example>
     </owl:ObjectProperty>
     
 
@@ -120,6 +193,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameterType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:label>has climate parameter occurrence</rdfs:label>
+        <skos:definition>Assigns a climate parameter type to a specific climate parameter.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -131,6 +205,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:label>has disaster climate parameter</rdfs:label>
+        <skos:definition>Associates a natural disaster occurrence to a climate parameter measurement.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -142,6 +217,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:label>has disaster location</rdfs:label>
+        <skos:definition>Represents the location where a natural disaster takes place.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -153,6 +229,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
         <rdfs:label>has disaster occurrence</rdfs:label>
+        <skos:definition>Links a natural disaster type to a natural disaster.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -164,6 +241,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
         <rdfs:label>has impact occurrence</rdfs:label>
+        <skos:definition>Links an impact type to a specific impact pccurrence.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -175,6 +253,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
         <rdfs:label>has impact on</rdfs:label>
+        <skos:definition>Indicates which vulnerable object is impacted by the specific impact occurrence.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -186,6 +265,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:label>has incident climate parameter</rdfs:label>
+        <skos:definition>Associates an incident to a climate parameter measurement.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -197,6 +277,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
         <rdfs:label>has incident impact</rdfs:label>
+        <skos:definition>Indicates the impact of the specific incident.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -208,6 +289,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:label>has incident location</rdfs:label>
+        <skos:definition>Represents the location where an incident occurs.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -219,6 +301,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:label>has incident occurrence</rdfs:label>
+        <skos:definition>Links an incident type to an incident.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -230,6 +313,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:label>has measurement location</rdfs:label>
+        <skos:definition>Represents the location where a climate parameter measurement was taken.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -241,6 +325,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:label>has media location</rdfs:label>
+        <skos:definition>Represents the location where a media item was captured.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -252,6 +337,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:label>has responder location</rdfs:label>
+        <skos:definition>Represents the location where a rescue unit is at.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -262,6 +348,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
         <rdfs:label>incident detected by</rdfs:label>
+        <skos:definition>Indicates the detection activity that detected this incident.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -273,6 +360,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:label>involved in incident</rdfs:label>
+        <skos:definition>Indicates the incident a vulnerable object is involved in.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -283,6 +371,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
         <rdfs:label>involves participant</rdfs:label>
+        <skos:definition>Indicates the vulnerable objects involved in an incident.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -294,6 +383,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
         <rdfs:label>is assigned mission</rdfs:label>
+        <skos:definition>Indicates the mission assignment of a rescue unit.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -304,6 +394,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder"/>
         <rdfs:label>is assigned to responder</rdfs:label>
+        <skos:definition>Links a mission to a rescue unit.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -314,6 +405,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:label>is climate parameter of incident</rdfs:label>
+        <skos:definition>Links a climate parameter measurement to an incident.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -324,6 +416,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:label>is impact of incident</rdfs:label>
+        <skos:definition>Links an impact to an incident.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -334,6 +427,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
         <rdfs:label>is impacted by</rdfs:label>
+        <skos:definition>Links an affected object to an impact.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -344,6 +438,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
         <rdfs:label>is location of disaster</rdfs:label>
+        <skos:definition>Links a location to a natural disaster occurrence.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -354,6 +449,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:label>is location of incident</rdfs:label>
+        <skos:definition>Links a location to an incident occurrence.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -364,6 +460,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:label>is location of measurement</rdfs:label>
+        <skos:definition>Links a location to a climate parameter measurement.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -374,6 +471,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:label>is location of media item</rdfs:label>
+        <skos:definition>Links a location to a media item.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -384,6 +482,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder"/>
         <rdfs:label>is location of responder</rdfs:label>
+        <skos:definition>Links a location to a rescue unit.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -394,6 +493,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameterType"/>
         <rdfs:label>is of climate parameter type</rdfs:label>
+        <skos:definition>Associates a climate parameter with a respective type.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -404,6 +504,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
         <rdfs:label>is of disaster type</rdfs:label>
+        <skos:definition>Links a natural disaster to a natural disaster type.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -414,6 +515,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType"/>
         <rdfs:label>is of impact type</rdfs:label>
+        <skos:definition>Links an impact to an impact type.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -424,6 +526,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType"/>
         <rdfs:label>is of incident type</rdfs:label>
+        <skos:definition>Links an incident to an incident type.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -436,6 +539,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
         <rdfs:label>is result of</rdfs:label>
+        <skos:definition>Represents the fact that a natural disaster can be the result of other natural disasters.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -447,6 +551,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType"/>
         <rdfs:label>leads to</rdfs:label>
+        <skos:definition>Represents the fact that a natural disaster can lead to other natural disasters.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -457,6 +562,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
         <rdfs:label>participant detected by</rdfs:label>
+        <skos:definition>Indicates which detection activity detected the participants.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -468,6 +574,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dataset"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task"/>
         <rdfs:label>produced by task</rdfs:label>
+        <skos:definition>Indicates the task a dataset was produced from.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -478,6 +585,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dataset"/>
         <rdfs:label>produces dataset</rdfs:label>
+        <skos:definition>Indicates the dataset produced by this task.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -489,6 +597,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:label>relates to</rdfs:label>
+        <skos:definition>Associates media items.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -500,6 +609,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:label>relates to incident</rdfs:label>
+        <skos:definition>Associates a mission to an incident occurrence.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -511,6 +621,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:label>relates to media item</rdfs:label>
+        <skos:definition>Associates a task to a media item.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -521,6 +632,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission"/>
         <rdfs:label>relates to mission</rdfs:label>
+        <skos:definition>Associates an incident occurrence to a mission.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -531,6 +643,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ClimateParameter"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster"/>
         <rdfs:label>relates to natural disaster</rdfs:label>
+        <skos:definition>Associates a climate parameter measurement to a natural disaster occurrence.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -541,6 +654,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task"/>
         <rdfs:label>relates to task</rdfs:label>
+        <skos:definition>Associates a media item to a task.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -853,6 +967,7 @@
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
         <owl:disjointWith rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#LivingBeing"/>
         <rdfs:label>Asset</rdfs:label>
+        <skos:definition>Any non-living item of interest.</skos:definition>
     </owl:Class>
     
 
@@ -862,6 +977,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#AudioItem">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:label>Audio Item</rdfs:label>
+        <skos:definition>Represents an audio recording.</skos:definition>
     </owl:Class>
     
 
@@ -928,6 +1044,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#DataAnalysis">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task"/>
         <rdfs:label>Data Analysis</rdfs:label>
+        <skos:definition>A type of a task involving data analysis.</skos:definition>
     </owl:Class>
     
 
@@ -936,6 +1053,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dataset">
         <rdfs:label>Dataset</rdfs:label>
+        <skos:definition>Represents the dataset produced by some task.</skos:definition>
     </owl:Class>
     
 
@@ -944,6 +1062,8 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection">
         <rdfs:label>Detection</rdfs:label>
+        <skos:definition>Represents detections in a dataset.</skos:definition>
+        <skos:example>A person trapped in the flood.</skos:example>
     </owl:Class>
     
 
@@ -961,6 +1081,8 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset"/>
+        <rdfs:label>Ecological Asset</rdfs:label>
+        <skos:definition>Ecological assets of various types.</skos:definition>
     </owl:Class>
     
 
@@ -970,6 +1092,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EducationalFacility">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Educational Facility</rdfs:label>
+        <skos:example>School or University.</skos:example>
     </owl:Class>
     
 
@@ -1033,6 +1156,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImageAnalysis">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#DataAnalysis"/>
         <rdfs:label>Image Analysis</rdfs:label>
+        <skos:definition>The task of analyzing images.</skos:definition>
     </owl:Class>
     
 
@@ -1042,6 +1166,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImageItem">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:label>Image Item</rdfs:label>
+        <skos:definition>Represents a captured image.</skos:definition>
     </owl:Class>
     
 
@@ -1050,6 +1175,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact">
         <rdfs:label>Impact</rdfs:label>
+        <skos:example>Represents the impact of natural disasters and incidents.</skos:example>
     </owl:Class>
     
 
@@ -1058,6 +1184,8 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ImpactType">
         <rdfs:label>Impact Type</rdfs:label>
+        <skos:definition>Represents the various types of impacts.</skos:definition>
+        <skos:example>Injuries, damage to properties etc.</skos:example>
     </owl:Class>
     
 
@@ -1066,6 +1194,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Incident">
         <rdfs:label>Incident</rdfs:label>
+        <skos:definition>Represents the various incidents taking place during a natural disaster.</skos:definition>
     </owl:Class>
     
 
@@ -1074,6 +1203,8 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#IncidentType">
         <rdfs:label>Incident Type</rdfs:label>
+        <skos:definition>Represents the various types of incidents.</skos:definition>
+        <skos:example>Floods, blocked streets etc.</skos:example>
     </owl:Class>
     
 
@@ -1082,6 +1213,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset"/>
+        <rdfs:label>Infrastructure</rdfs:label>
     </owl:Class>
     
 
@@ -1117,6 +1249,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location">
         <rdfs:label>Location</rdfs:label>
+        <skos:definition>Represents a location (point or area), indicated by latitude, longitude, and radius.</skos:definition>
     </owl:Class>
     
 
@@ -1125,6 +1258,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem">
         <rdfs:label>Media Item</rdfs:label>
+        <skos:definition>Represents a generic media item. Subclasses include specific types of media items.</skos:definition>
     </owl:Class>
     
 
@@ -1133,6 +1267,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Mission">
         <rdfs:label>Mission</rdfs:label>
+        <skos:definition>Represents a mission assigned to a rescue unit during a crisis.</skos:definition>
     </owl:Class>
     
 
@@ -1151,6 +1286,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster">
         <rdfs:label>Natural Disaster</rdfs:label>
+        <skos:definition>Represents the actual manifestation of a natural disaster type. An instance of a natural disaster has specific climate conditions with specific values (e.g. temperature = 45) plus some other properties (e.g. start/end time).</skos:definition>
     </owl:Class>
     
 
@@ -1159,6 +1295,8 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisasterType">
         <rdfs:label>Natural Disaster Type</rdfs:label>
+        <skos:definition>Represents the various types of disasters.</skos:definition>
+        <skos:example>Floods, forest fires, storms or earthquakes etc.</skos:example>
     </owl:Class>
     
 
@@ -1212,6 +1350,8 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder">
         <rdfs:label>Responder</rdfs:label>
+        <skos:definition>A first responder unit.</skos:definition>
+        <skos:example>A firefighter, police officer or emergency medical physician.</skos:example>
     </owl:Class>
     
 
@@ -1274,6 +1414,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Task">
         <rdfs:label>Task</rdfs:label>
+        <skos:definition>A task that has to do with analyzing or processing items.</skos:definition>
     </owl:Class>
     
 
@@ -1283,6 +1424,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#TextAnalysis">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#DataAnalysis"/>
         <rdfs:label>Text Analysis</rdfs:label>
+        <skos:definition>The task of analyzing text corpora.</skos:definition>
     </owl:Class>
     
 
@@ -1292,6 +1434,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#TextItem">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:label>Text Item</rdfs:label>
+        <skos:definition>Represents a piece of text.</skos:definition>
     </owl:Class>
     
 
@@ -1319,6 +1462,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoAnalysis">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#DataAnalysis"/>
         <rdfs:label>Video Analysis</rdfs:label>
+        <skos:definition>The task of analyzing videos.</skos:definition>
     </owl:Class>
     
 
@@ -1328,6 +1472,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VideoItem">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#MediaItem"/>
         <rdfs:label>Video Item</rdfs:label>
+        <skos:definition>Represents a video recording.</skos:definition>
     </owl:Class>
     
 
@@ -1383,6 +1528,172 @@
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#person_1 -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#person_1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/">
+        <terms:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
+        <terms:title xml:lang="en">Dublin Core Metadata Element Set, Version 1.1</terms:title>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</terms:modified>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#contributor-006"/>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <terms:description xml:lang="en">Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity.</terms:description>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/coverage">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#coverage-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en">The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.</rdfs:comment>
+        <terms:description xml:lang="en">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:label xml:lang="en">Coverage</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:description xml:lang="en">Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#creator-006"/>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#date-006"/>
+        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
+        <terms:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</terms:description>
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+        <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#description-006"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/format">
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:label xml:lang="en">Format</rdfs:label>
+        <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#format-007"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:description xml:lang="en">Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME].</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#identifier-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:description xml:lang="en">Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. </terms:description>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/language">
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#language-007"/>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <terms:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646].</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc4646.txt"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#publisher-006"/>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity.</terms:description>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/relation">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#relation-006"/>
+        <terms:description xml:lang="en">Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system. </terms:description>
+        <rdfs:label xml:lang="en">Relation</rdfs:label>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#rights-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</terms:description>
+        <rdfs:label xml:lang="en">Rights</rdfs:label>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/source">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#source-006"/>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:description xml:lang="en">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</terms:description>
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/subject">
+        <terms:description xml:lang="en">Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.</terms:description>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <rdfs:comment xml:lang="en">The topic of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</terms:modified>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#subject-007"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#title-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/type">
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#type-006"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+    </rdf:Description>
     
 
 
