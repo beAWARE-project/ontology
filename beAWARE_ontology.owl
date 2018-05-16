@@ -11,10 +11,8 @@
      xmlns:beAWARE_ontology="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology">
-        <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     </owl:Ontology>
     
 
@@ -913,6 +911,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Animal">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#LivingBeing"/>
         <rdfs:label>Animal</rdfs:label>
+        <skos:definition>Represents animals in danger during a natural disaster.</skos:definition>
     </owl:Class>
     
 
@@ -943,6 +942,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Bridge">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure"/>
         <rdfs:label>Bridge</rdfs:label>
+        <skos:definition>Represents bridges.</skos:definition>
     </owl:Class>
     
 
@@ -963,6 +963,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Car">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Vehicle"/>
         <rdfs:label>Car</rdfs:label>
+        <skos:definition>Represents any type of car.</skos:definition>
     </owl:Class>
     
 
@@ -991,6 +992,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Communication">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Communication</rdfs:label>
+        <skos:definition>Represents any type of (tele)communication infrastructure.</skos:definition>
     </owl:Class>
     
 
@@ -1029,6 +1031,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Dunes">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset"/>
         <rdfs:label>Dunes</rdfs:label>
+        <skos:definition>Represents dunes.</skos:definition>
     </owl:Class>
     
 
@@ -1048,6 +1051,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EducationalFacility">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Educational Facility</rdfs:label>
+        <skos:definition>Represents any type of educational facility.</skos:definition>
         <skos:example>School or University.</skos:example>
     </owl:Class>
     
@@ -1058,6 +1062,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#ElectricEnergySupply">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Energy"/>
         <rdfs:label>Electric Energy Supply</rdfs:label>
+        <skos:definition>Represents electric energy supply infrastructure.</skos:definition>
     </owl:Class>
     
 
@@ -1067,6 +1072,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Energy">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Energy</rdfs:label>
+        <skos:definition>Represents any type of energy-generating infrastructure.</skos:definition>
     </owl:Class>
     
 
@@ -1076,6 +1082,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#FireDepartment">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Fire Department</rdfs:label>
+        <skos:definition>Represents fire departments.</skos:definition>
     </owl:Class>
     
 
@@ -1085,6 +1092,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#GarbageCollection">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Garbage Collection</rdfs:label>
+        <skos:definition>Represents garbage collection infrastructure and services.</skos:definition>
     </owl:Class>
     
 
@@ -1094,6 +1102,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Hospital">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Hospital</rdfs:label>
+        <skos:definition>Represents hospitals.</skos:definition>
     </owl:Class>
     
 
@@ -1103,6 +1112,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Human">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#LivingBeing"/>
         <rdfs:label>Human</rdfs:label>
+        <skos:definition>Represents human beings in danger.</skos:definition>
     </owl:Class>
     
 
@@ -1170,6 +1180,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset"/>
         <rdfs:label>Infrastructure</rdfs:label>
+        <skos:definition>Represents critical infrastructure that is in danger during a natural disaster.</skos:definition>
     </owl:Class>
     
 
@@ -1179,6 +1190,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Levee">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure"/>
         <rdfs:label>Levee</rdfs:label>
+        <skos:definition>An embankment for preventing flooding.</skos:definition>
     </owl:Class>
     
 
@@ -1188,6 +1200,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Livestock">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Animal"/>
         <rdfs:label>Livestock</rdfs:label>
+        <skos:definition>Represents domestic animals.</skos:definition>
     </owl:Class>
     
 
@@ -1197,6 +1210,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#LivingBeing">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject"/>
         <rdfs:label>Living Being</rdfs:label>
+        <skos:definition>Any living being that is in danger during a natural disaster.</skos:definition>
     </owl:Class>
     
 
@@ -1262,6 +1276,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalHabitat">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset"/>
         <rdfs:label>Natural Habitat</rdfs:label>
+        <skos:definition>Represents natural habitats.</skos:definition>
     </owl:Class>
     
 
@@ -1271,6 +1286,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Plant">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset"/>
         <rdfs:label>Plant</rdfs:label>
+        <skos:definition>Represents the fauna.</skos:definition>
     </owl:Class>
     
 
@@ -1280,6 +1296,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Police">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Police</rdfs:label>
+        <skos:definition>Represents law enforcement infrastructure and services.</skos:definition>
     </owl:Class>
     
 
@@ -1289,6 +1306,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Property">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset"/>
         <rdfs:label>Property</rdfs:label>
+        <skos:definition>Represents any type of private property.</skos:definition>
     </owl:Class>
     
 
@@ -1298,6 +1316,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#PublicTransportation">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation"/>
         <rdfs:label>Public Transportation</rdfs:label>
+        <skos:definition>Represents public transportation services and infrastructure.</skos:definition>
     </owl:Class>
     
 
@@ -1306,7 +1325,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Responder">
         <rdfs:label>Responder</rdfs:label>
-        <skos:definition>A first responder unit.</skos:definition>
+        <skos:definition>Represents a first responder unit.</skos:definition>
         <skos:example>A firefighter, police officer or emergency medical physician.</skos:example>
     </owl:Class>
     
@@ -1317,6 +1336,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#River">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#EcologicalAsset"/>
         <rdfs:label>River</rdfs:label>
+        <skos:definition>Represents rivers.</skos:definition>
     </owl:Class>
     
 
@@ -1326,6 +1346,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Sewer">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Sewer</rdfs:label>
+        <skos:definition>Represents sewage infrastructure.</skos:definition>
     </owl:Class>
     
 
@@ -1335,6 +1356,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Square">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure"/>
         <rdfs:label>Square</rdfs:label>
+        <skos:definition>Represents squares in danger during an environmental crisis.</skos:definition>
     </owl:Class>
     
 
@@ -1344,6 +1366,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Street">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation"/>
         <rdfs:label>Street</rdfs:label>
+        <skos:definition>Represents the road network infrastructure.</skos:definition>
     </owl:Class>
     
 
@@ -1353,6 +1376,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset"/>
         <rdfs:label>Structure</rdfs:label>
+        <skos:definition>Represents various structures and buildings.</skos:definition>
     </owl:Class>
     
 
@@ -1362,6 +1386,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Subway">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#PublicTransportation"/>
         <rdfs:label>Subway</rdfs:label>
+        <skos:definition>Represents subway infrastructure.</skos:definition>
     </owl:Class>
     
 
@@ -1380,7 +1405,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#TextAnalysis">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#DataAnalysis"/>
         <rdfs:label>Text Analysis</rdfs:label>
-        <skos:definition>The task of analyzing text corpora.</skos:definition>
+        <skos:definition>The task of analyzing textual corpora.</skos:definition>
     </owl:Class>
     
 
@@ -1400,6 +1425,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Transportation">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Transportation</rdfs:label>
+        <skos:definition>Represents transportation services and infrastructure.</skos:definition>
     </owl:Class>
     
 
@@ -1409,6 +1435,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Vehicle">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Property"/>
         <rdfs:label>Vehicle</rdfs:label>
+        <skos:definition>Represents any type of vehicle.</skos:definition>
     </owl:Class>
     
 
@@ -1447,7 +1474,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Wall">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Structure"/>
         <rdfs:label>Wall</rdfs:label>
-        <skos:definition>A vertical structure, often made of stone or brick, that divides or surrounds something.</skos:definition>
+        <skos:definition>A vertical structure often made of stone or brick that divides or surrounds something.</skos:definition>
     </owl:Class>
     
 
@@ -1457,6 +1484,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#WaterSupply">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Infrastructure"/>
         <rdfs:label>Water Supply</rdfs:label>
+        <skos:definition>Represents water supply and sanitation infrastructure.</skos:definition>
     </owl:Class>
     
 
@@ -1466,6 +1494,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Wildlife">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Animal"/>
         <rdfs:label>Wildlife</rdfs:label>
+        <skos:definition>Represents wild animals.</skos:definition>
     </owl:Class>
     
 
