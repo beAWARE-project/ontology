@@ -1141,7 +1141,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact">
         <rdfs:label>Impact</rdfs:label>
-        <skos:example>Represents the impact of natural disasters and incidents.</skos:example>
+        <skos:definition>Represents the impact of natural disasters and incidents.</skos:definition>
     </owl:Class>
     
 
