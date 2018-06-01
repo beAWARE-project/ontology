@@ -784,6 +784,17 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionRisk -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionRisk">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Detection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has detection risk</rdfs:label>
+        <skos:definition>Indicates the risk level of the detection.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionStart -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDetectionStart">
