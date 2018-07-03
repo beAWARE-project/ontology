@@ -56,5 +56,5 @@ Please cite the following paper when using the beAWARE ontology:
 
 ## Contact
 For any queries or remarks, please feel free to contact us:
-* [Stratos Kontopoulos](http://www.stratoskontopoulos.com) ([e-mail])(mailto:skontopo@iti.gr)
-* [Panagiotis Mitzias](http://pmitzias.com/) ([e-mail])(mailto:pmitzias@iti.gr)
+* [Stratos Kontopoulos](http://www.stratoskontopoulos.com) ([e-mail](mailto:skontopo@iti.gr))
+* [Panagiotis Mitzias](http://pmitzias.com/) ([e-mail](mailto:pmitzias@iti.gr))
