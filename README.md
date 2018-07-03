@@ -21,6 +21,7 @@ The representation of climate-related natural disasters in the beAWARE ontology 
 ![beAWARE-ontology-disasters-schema.png](images/beAWARE-ontology-disasters-schema.png)
 
 Class `Natural Disaster Type` represents the various types of disasters, e.g. floods, forest fires, storms or earthquakes etc. Disasters may lead to other disasters (via property `leads to`); for instance, a heat wave may lead to forest fires, or storms may lead to floods. Each type of disaster is characterized by certain climate parameters, represented via class `Climate Parameter Type`. The actual manifestation of a natural disaster is represented via class `Natural Disaster`, an instance of which has specific climate conditions (via class `Climate Parameter`) with specific values. Impacts and incidents are also associated to natural disasters, via the respective classes. 
+
 The figure below displays a sample temperature measurement, which was recorded during the [2017 UK heatwave](http://www.bbc.com/news/uk-40353118) (17-22 June).
 
 ![beAWARE-ontology-disasters-example.png](images/beAWARE-ontology-disasters-example.png)
@@ -31,7 +32,7 @@ The beAWARE ontology also encompasses information relevant to the analysis of in
 
 ![beAWARE-ontology-analysis-schema.png](images/beAWARE-ontology-analysis-schema.png)
 
-Class `Media Item` represents an item of analyzed data, which is related to some analysis task (via class `Task`). Media items can be pieces of text, images, videos, or social media posts, all of them submitted during the occurrence of the crisis. The analysis of the respective items (text analysis, image analysis or video analysis) produces a `Dataset` containing all relevant information (e.g., an object detection task may produce a dataset of detected incidents, objects, and confidence scores).
+Class `Media Item` represents an item of analyzed data, which is related to some analysis task (via class `Task`). Media items can be pieces of text, images, videos, or social media posts, all of them submitted during the occurrence of the crisis. The analysis of the respective items (text analysis, image analysis or video analysis) produces a `Dataset` containing all relevant information (e.g. an object detection task may produce a dataset of detected incidents, objects, and confidence scores).
 
 The figure below demonstrates an example of a video analysis instance, where a vehicle is detected participating in a flood incident. Note that the beAWARE ontology contains a complete typology of media items (text, image, video, social media), vulnerable objects (e.g. assets, stakeholders, infrastructure, buildings etc.), impacts, data analyses, and incidents.
 
