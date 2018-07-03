@@ -20,9 +20,11 @@ The representation of climate-related natural disasters in the beAWARE ontology 
 
 ![beAWARE-ontology-disasters-schema.png](images/beAWARE-ontology-disasters-schema.png)
 
-I think you should use an `<addr>` element here instead.
+Class `Natural Disaster Type` represents the various types of disasters, e.g. floods, forest fires, storms or earthquakes etc. Disasters may lead to other disasters (via property `leads to`); for instance, a heat wave may lead to forest fires, or storms may lead to floods. Each type of disaster is characterized by certain climate parameters, represented via class `Climate Parameter Type`. The actual manifestation of a natural disaster is represented via class `Natural Disaster`, an instance of which has specific climate conditions (via class `Climate Parameter`) with specific values. Impacts and incidents are also associated to natural disasters, via the respective classes. 
 
-Class Natural Disaster Type represents the various types of disasters, e.g. floods, forest fires, storms or earthquakes etc. Disasters may lead to other disasters (via property leads to); for instance, a heat wave may lead to forest fires, or storms may lead to floods. Each type of disaster is characterized by certain climate parameters, represented via class Climate Parameter Type. The actual manifestation of a natural disaster is represented via class Natural Disaster, an instance of which has specific climate conditions (via class Climate Parameter) with specific values. Impacts and incidents are also associated to natural disasters, via the respective classes. Figure 4 displays a sample temperature measurement, which was recorded during the 2017 UK heatwave  (17-22 June).
+
+
+Figure 4 displays a sample temperature measurement, which was recorded during the 2017 UK heatwave  (17-22 June).
 
 
 
