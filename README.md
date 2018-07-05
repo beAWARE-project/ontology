@@ -1,5 +1,5 @@
 # beAWARE Ontology
-This repository contains the first iteration of the beAWARE ontology, which was presented in project deliverable D4.2. All diagrammatic representations are based on the (Grafoo)[www.essepuntato.it/graffoo/] graphical notation.
+This repository contains the first iteration of the beAWARE ontology, which was presented in project deliverable D4.2. All diagrammatic representations are based on the [Grafoo](www.essepuntato.it/graffoo/) graphical notation.
 
 
 ## Ontology Scope
