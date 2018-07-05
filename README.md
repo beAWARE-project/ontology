@@ -3,12 +3,12 @@ This repository contains the first iteration of the beAWARE ontology, which was 
 
 
 ## Ontology Scope
-The beAWARE ontology is an "all-around" lightweight ontology for climate crisis management and represents the following key aspects:
+The beAWARE ontology is an "all-around" lightweight ontology for climate-related crisis management and represents the following key aspects:
 * Climate-related natural disasters;
-* Analysis of data from the multimodal sensors;
+* Analysis of data from multimodal sensors;
 * Rescue team assignments.
 
-The figure below displays an overview of the core ontology classes; for simplicity, we have omitted data type and inverse properties, as well as extensive class hierarchies.
+The figure below displays an overview of the core ontology classes; for simplicity, data type and inverse properties are omitted, as well as extensive class hierarchies.
 
 ![beAWARE-ontology-overall.png](images/beAWARE-ontology-overall.png)
 
@@ -20,7 +20,9 @@ The representation of climate-related natural disasters in the beAWARE ontology 
 
 ![beAWARE-ontology-disasters-schema.png](images/beAWARE-ontology-disasters-schema.png)
 
-Class `Natural Disaster Type` represents the various types of disasters, e.g. floods, forest fires, storms or earthquakes etc. Disasters may lead to other disasters (via property `leads to`); for instance, a heat wave may lead to forest fires, or storms may lead to floods. Each type of disaster is characterized by certain climate parameters, represented via class `Climate Parameter Type`. The actual manifestation of a natural disaster is represented via class `Natural Disaster`, an instance of which has specific climate conditions (via class `Climate Parameter`) with specific values. Impacts and incidents are also associated to natural disasters, via the respective classes. 
+Class `Natural Disaster Type` represents the various types of disasters, e.g. floods, forest fires, storms or earthquakes etc. Disasters may lead to other disasters (via property `leads to`); for instance, a heat wave may lead to forest fires, or storms may lead to floods. Each type of disaster is characterized by certain climate parameters, represented via class `Climate Parameter Type`. 
+
+The actual manifestation of a natural disaster is represented via class `Natural Disaster`, an instance of which has specific climate conditions (via class `Climate Parameter`) with specific values. Impacts and incidents are also associated to natural disasters, via the respective classes. 
 
 The figure below displays a sample temperature measurement, which was recorded during the [2017 UK heatwave](http://www.bbc.com/news/uk-40353118) (17-22 June).
 
@@ -28,7 +30,7 @@ The figure below displays a sample temperature measurement, which was recorded d
 
 
 ### Representing Analyzed Data
-The beAWARE ontology also encompasses information relevant to the analysis of input data coming from various sensors. The core constructs in the ontology for representing the information fed to the ontology from the analysis components are illustrated in the following figure.
+The beAWARE ontology also encompasses information relevant to the analysis of input data coming from various sensors. The following figure illustrates the core constructs for representing the information fed to the ontology from the analysis components.
 
 ![beAWARE-ontology-analysis-schema.png](images/beAWARE-ontology-analysis-schema.png)
 
@@ -45,6 +47,11 @@ The third component of the beAWARE ontology is responsible for semantically repr
 The following figure displays the respective concepts in the proposed ontology. First responders (class `Responder`) are assigned one or more missions (class `Mission`), which in turn relate to incidents that involve participating entities (class `Vulnerable Object`). A mission is also characterized by start and end time, status and mission priority.
 
 ![beAWARE-ontology-responders-schema.png](images/beAWARE-ontology-responders-schema.png)
+
+
+## Ontology Specifications
+
+The full list of the ontology specs can be found [here](beAWARE-Ontology-Specifications.pdf).
 
 
 ## Citation
