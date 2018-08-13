@@ -1,4 +1,4 @@
-# beAWARE Ontology
+# The beAWARE Crisis Management Ontology
 This repository contains the first iteration of the ontology for the [beAWARE H2020 project](http://beaware-project.eu/). All diagrammatic representations are based on the [Grafoo](www.essepuntato.it/graffoo/) graphical notation.
 
 # Table of Contents
@@ -6,7 +6,7 @@ This repository contains the first iteration of the ontology for the [beAWARE H2
   * [Representing Natural Disasters](#representing-natural-disasters)
   * [Representing Analyzed Data](#representing-analyzed-data)
   * [Representing Rescue Team Assignments](#representing-rescue-team-assignments) 
-* [Ontology Specifications](#ontology-specifications)
+* [Ontology Specifications and Competency Questions](#ontology-specifications-and-competency-questions)
 * [Citation](#citation)
 * [Contact](#contact)
 
@@ -56,9 +56,9 @@ The following figure displays the respective concepts in the proposed ontology. 
 ![beAWARE-ontology-responders-schema.png](images/beAWARE-ontology-responders-schema.png)
 
 
-## Ontology Specifications
+## Ontology Specifications and Competency Questions
 
-The full list of the ontology specs can be found [here](beAWARE-Ontology-Specifications.pdf).
+The full list of the ontology specs can be found [here](beAWARE-Ontology-Specifications.pdf), while the full list of Competency Questions (CQs) that the ontology can respond to are found [here](CQs.md).
 
 
 ## Citation
