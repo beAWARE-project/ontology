@@ -1,9 +1,9 @@
 # beAWARE Ontology
-This repository contains the first iteration of the beAWARE ontology, which was presented in project deliverable D4.2. All diagrammatic representations are based on the [Grafoo](www.essepuntato.it/graffoo/) graphical notation.
+This repository contains the first iteration of the beAWARE ontology. All diagrammatic representations are based on the [Grafoo](www.essepuntato.it/graffoo/) graphical notation.
 
 
 ## Ontology Scope
-The beAWARE ontology is an "all-around" lightweight ontology for climate-related crisis management and represents the following key aspects:
+The beAWARE ontology is an "all-around" lightweight crisis management ontology for climate-related disasters and represents the following key aspects:
 * Climate-related natural disasters;
 * Analysis of data from multimodal sensors;
 * Rescue team assignments.
