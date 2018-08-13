@@ -1,8 +1,14 @@
 # beAWARE Ontology
 This repository contains the first iteration of the ontology for the [beAWARE H2020 project](http://beaware-project.eu/). All diagrammatic representations are based on the [Grafoo](www.essepuntato.it/graffoo/) graphical notation.
 
-[Representing Natural Disasters](#representing-natural-disasters)
-
+# Table of Contents
+[Ontology Scope](#ontology-scope)
+ [Representing Natural Disasters](#representing-natural-disasters)
+ [Representing Analyzed Data](#representing-analyzed-data)
+ [Representing Rescue Team Assignments](#representing-rescue-team-assignments)
+[Ontology Specifications](#ontology-specifications)
+[Citation](#citation)
+[Contact](#contact)
 
 ## Ontology Scope
 The beAWARE ontology is an "all-around" lightweight crisis management ontology for climate-related disasters and represents the following key aspects:
