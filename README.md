@@ -16,7 +16,7 @@ The figure below displays an overview of the core ontology classes; for simplici
 
 The following subsections present the various aspects of the ontology in more detail.
 
-(###Representing-Natural-Disasters)
+### Representing-Natural-Disasters
 The representation of climate-related natural disasters in the beAWARE ontology is illustrated in the following figure.
 
 ![beAWARE-ontology-disasters-schema.png](images/beAWARE-ontology-disasters-schema.png)
