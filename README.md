@@ -11,8 +11,8 @@ This repository contains the first iteration of the ontology for the [beAWARE H2
 * [Contact](#contact)
 
 ## Ontology Scope
-The beAWARE ontology is an "all-around" lightweight crisis management ontology for climate-related disasters and represents the following key aspects:
-* Climate-related natural disasters;
+The beAWARE ontology is an "all-around" lightweight crisis management ontology for climate-related natural disasters and represents the following key aspects:
+* Information relevant to Climate-related natural disasters;
 * Analysis of data from multimodal sensors;
 * Rescue team assignments.
 
