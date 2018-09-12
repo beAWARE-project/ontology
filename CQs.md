@@ -2,7 +2,7 @@
 
 This is a list of all the Competency Questions (CQs) that the ontology should be able to respond to. In the SPARQL queries, the `rdf` prefix indicates the namespace of the core W3C RDF vocabulary, while the `ba` prefix indicates the namespace of the beAWARE ontology.
 
-CQ# &nbsp;| Competency Question | SPARQL
+CQ# &nbsp; &nbsp; &nbsp; &nbsp; | Competency Question | SPARQL
 --- | ------------------- | ------
 CQ1-1 | Which natural disasters may lead to natural disaster [X]? | `SELECT ?disaster1 ?disaster2`<br/>`WHERE {`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`?disaster1 rdf:type ba:NaturalDisasterType .`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`?disaster2 rdf:type ba:NaturalDisasterType .`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`?disaster1 ba:leadsTo ?disaster2 .`<br/>`}`
 CQ1-2	| What are the impacts caused by natural disaster [X]? | `SELECT ?impact ?disaster`<br/>`WHERE {`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`?impact rdf:type ba:ImpactType .`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`?disaster rdf:type ba:NaturalDisasterType .`<br/>&nbsp;&nbsp;&nbsp;&nbsp;`?disaster ba:causesDisasterImpact ?impact .`<br/>`}`
