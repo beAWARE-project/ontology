@@ -1,4 +1,4 @@
-# The beAWARE Crisis Management Ontology
+# The beAWARE Crisis Management Ontology v1
 This repository contains the first iteration of the ontology for the [beAWARE H2020 project](http://beaware-project.eu/) along with the relevant documentation. 
 
 # Table of Contents
