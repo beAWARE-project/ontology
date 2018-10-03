@@ -12,7 +12,7 @@ This repository contains the first iteration of the ontology for the [beAWARE H2
 * [Contact](#contact)
 
 ## Ontology Visualization
-All diagrammatic representations here are based on the [Grafoo](http://www.essepuntato.it/static/graffoo/specification/current.html) graphical notation. To visualize the beAWARE ontology using [WebVOWL](http://vowl.visualdataweb.org/webvowl.html) click [here](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology.owl).
+All diagrammatic representations here are based on the [Grafoo](http://www.essepuntato.it/static/graffoo/specification/current.html) graphical notation. Alternatively, you can visualize the beAWARE ontology using [WebVOWL](http://vowl.visualdataweb.org/webvowl.html) by clicking [here](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology.owl).
 
 ## Ontology Scope
 The beAWARE ontology is an "all-around" lightweight crisis management ontology for climate-related natural disasters and represents the following key aspects:
