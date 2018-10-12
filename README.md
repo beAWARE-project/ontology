@@ -7,6 +7,7 @@ This repository contains the first iteration of the ontology for the [beAWARE H2
   * [Representing Natural Disasters](#representing-natural-disasters)
   * [Representing Analyzed Data](#representing-analyzed-data)
   * [Representing Rescue Team Assignments](#representing-rescue-team-assignments) 
+* [Reuse of Existing Resources](#reuse-of-existing-resources)
 * [Ontology Specifications and Competency Questions](#ontology-specifications-and-competency-questions)
 * [Citation](#citation)
 * [Contact](#contact)
@@ -58,6 +59,17 @@ The third component of the beAWARE ontology is responsible for semantically repr
 The following figure displays the respective concepts in the proposed ontology. First responders (class `Responder`) are assigned one or more missions (class `Mission`), which in turn relate to incidents that involve participating entities (class `Vulnerable Object`). A mission is also characterized by start and end time, status and mission priority.
 
 ![beAWARE-ontology-responders-schema.png](images/beAWARE-ontology-responders-schema.png)
+
+
+## Reuse of Existing Resources
+
+The beAWARE ontology v1.0 imports the Simple Knowledge Organization System ([SKOS](https://www.w3.org/TR/2009/REC-skos-reference-20090818/)), which provides a set of metadata fields for enriching the ontology documentation. Specifically, we used `skos:definition` for providing the definitions of the classes and properties, and `skos:example` for providing examples of usage.
+
+Moreover, we relied on previously used and validated ontologies for developing (parts of) our ontology:
+* The [PESCaDO ontologies](https://link.springer.com/chapter/10.1007/978-3-642-37996-3_16) were used as the basis for representing environmental and meteorological conditions;
+* The representation of disaster impacts was to some extend based on [MOAC](http://www.observedchange.com/moac/ns/) (Management of a Crisis Vocabulary);
+* For categorizing damages and resources we are based on [SoKNOS](https://link.springer.com/chapter/10.1007/978-3-642-21064-8_13);
+* With regards to rescue unit assignments, our adopted representation is based on the approach proposed by the [OASIS project](https://cordis.europa.eu/project/rcn/92923_en.html).
 
 
 ## Ontology Specifications and Competency Questions
