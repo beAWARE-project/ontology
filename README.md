@@ -23,7 +23,7 @@ The beAWARE ontology is an "all-around" lightweight crisis management ontology f
 
 The figure below displays an overview of the core ontology classes; for simplicity, data type and inverse properties are omitted, as well as extensive class hierarchies.
 
-![beAWARE-ontology-overall.png](images/beAWARE-ontology-overall.png)
+[beAWARE-ontology-overall.png](images/beAWARE-ontology-overall.png)
 
 The following subsections present the various aspects of the ontology in more detail.
 
