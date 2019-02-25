@@ -1,5 +1,5 @@
-# The beAWARE Crisis Management Ontology v1.0
-This repository contains the first iteration of the crisis management ontology for the [beAWARE H2020 project](http://beaware-project.eu/) along with the relevant documentation. 
+# The beAWARE Crisis Management Ontology
+This repository contains the crisis management ontology for the [beAWARE H2020 project](http://beaware-project.eu/) along with the relevant documentation. 
 
 # Table of Contents
 * [Ontology Visualization](#ontology-visualization)
@@ -54,9 +54,7 @@ The figure below demonstrates an example of a video analysis instance, where a v
 
 
 ### Representing Rescue Team Assignments
-The third component of the beAWARE ontology is responsible for semantically representing rescue team assignments. This component is not very mature yet, but will be extended in the next iteration of the ontology.
-
-The following figure displays the respective concepts in the proposed ontology. First responders (class `Responder`) are assigned one or more missions (class `Mission`), which in turn relate to incidents that involve participating entities (class `Vulnerable Object`). A mission is also characterized by start and end time, status and mission priority.
+The third component of the beAWARE ontology is responsible for semantically representing rescue team assignments. The following figure displays the respective concepts in the proposed ontology. First responders (class `Responder`) are assigned one or more missions (class `Mission`), which in turn relate to incidents that involve participating entities (class `Vulnerable Object`). A mission is also characterized by start and end time, status and mission priority.
 
 ![beAWARE-ontology-responders-schema.png](images/beAWARE-ontology-responders-schema.png)
 
