@@ -84,5 +84,5 @@ Please cite the following paper when using the beAWARE ontology:
 
 ## Contact
 For any queries or remarks, please feel free to contact us:
-* CERTH team: Efstratios (Stratos) Kontopoulos ([Homepage](http://www.stratoskontopoulos.com) | [e-mail](mailto:skontopo@iti.gr?subject=beAWARE%20ontology) | [GitHub account](https://github.com/skontopo)) and [Panagiotis Mitzias](http://pmitzias.com/) ([e-mail](mailto:pmitzias@iti.gr?subject=beAWARE%20ontology)).
+* CERTH team: Efstratios (Stratos) Kontopoulos ([Homepage](http://www.stratoskontopoulos.com) | [e-mail](mailto:skontopo@iti.gr?subject=beAWARE%20ontology) | [GitHub account](https://github.com/skontopo)) and Panagiotis Mitzias ([Homepage](http://pmitzias.com/) | [e-mail](mailto:pmitzias@iti.gr?subject=beAWARE%20ontology) | [GitHub account](https://github.com/panmitz)).
 * IOSB team: Jürgen Moßgraber ([e-mail](mailto:juergen.mossgraber@iosb.fraunhofer.de?subject=beAWARE%20ontology)) and Tobias Hellmund ([e-mail](mailto:tobias.hellmund@iosb.fraunhofer.de?subject=beAWARE%20ontology)).
