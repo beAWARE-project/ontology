@@ -11,6 +11,7 @@ This repository contains the crisis management ontology for the [beAWARE H2020 p
 * [Ontology Specifications and Competency Questions](#ontology-specifications-and-competency-questions)
 * [Citation](#citation)
 * [Contact](#contact)
+* [Acknowledgement](#acknowledgement)
 
 ## Ontology Visualization
 All diagrammatic representations here are based on the [Grafoo](http://www.essepuntato.it/static/graffoo/specification/current.html) graphical notation. Alternatively, you can visualize the beAWARE ontology using [WebVOWL](http://vowl.visualdataweb.org/webvowl.html) by clicking [here](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology.owl).
@@ -86,3 +87,7 @@ Please cite the following paper when using the beAWARE ontology:
 For any queries or remarks, please feel free to contact us:
 * CERTH team: Efstratios (Stratos) Kontopoulos ([Homepage](http://www.stratoskontopoulos.com) | [e-mail](mailto:skontopo@iti.gr?subject=beAWARE%20ontology) | [GitHub account](https://github.com/skontopo)) and Panagiotis Mitzias ([Homepage](http://pmitzias.com/) | [e-mail](mailto:pmitzias@iti.gr?subject=beAWARE%20ontology) | [GitHub account](https://github.com/panmitz)).
 * IOSB team: Jürgen Moßgraber ([e-mail](mailto:juergen.mossgraber@iosb.fraunhofer.de?subject=beAWARE%20ontology)) and Tobias Hellmund ([e-mail](mailto:tobias.hellmund@iosb.fraunhofer.de?subject=beAWARE%20ontology)).
+
+
+## Acknowledgement
+This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 700475.
