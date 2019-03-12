@@ -1,6 +1,6 @@
 # Competency Questions
 
-This is a list of all the Competency Questions (CQs) that the ontology should be able to respond to. In the SPARQL queries, the `rdf` prefix indicates the namespace of the core W3C RDF vocabulary, while the `ba` prefix indicates the namespace of the beAWARE ontology.
+This is a list of all the Competency Questions (CQs) that the beAWARE crisis management ontology should be able to respond to. The CQs are expressed as SPARQL queries, where the `rdf` prefix indicates the namespace of the core W3C RDF vocabulary, while the `ba` prefix indicates the namespace of the beAWARE ontology.
 
 CQ# | Competency Question | SPARQL
 --- | ------------------- | ------
