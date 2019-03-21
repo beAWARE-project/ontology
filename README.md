@@ -73,7 +73,7 @@ Moreover, we relied on previously used and validated ontologies for developing (
 
 ## Ontology Specifications and Competency Questions
 
-The full list of the ontology specs can be found [here](beAWARE-Ontology-Specifications.pdf), while the full list of Competency Questions (CQs) that the ontology can respond to are found [here](CQs.md).
+The full list of the ontology specs can be found [here](beAWARE-Ontology-Specifications.pdf), while an indicative list of Competency Questions (CQs) that the ontology can respond to are found [here](CQs.md).
 
 
 ## Citation
