@@ -92,4 +92,4 @@ For any queries or remarks, please feel free to contact us:
 
 
 ## Acknowledgement
-This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 700475.
+This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement H2020-700475 beAWARE.
