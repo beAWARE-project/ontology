@@ -66,7 +66,7 @@ The beAWARE ontology imports the Simple Knowledge Organization System ([SKOS](ht
 
 Moreover, we relied on previously used and validated ontologies for developing parts of our ontology:
 * The [PESCaDO ontologies](https://link.springer.com/chapter/10.1007/978-3-642-37996-3_16) were used as the basis for representing environmental and meteorological conditions;
-* The representation of disaster impacts was to some extend based on [MOAC](http://www.observedchange.com/moac/ns/) (Management of a Crisis Vocabulary);
+* The representation of disaster impacts was to some extend based on [MOAC](https://lov.linkeddata.es/dataset/lov/vocabs/moac) (Management of a Crisis Vocabulary);
 * For categorizing damages and resources we are based on [SoKNOS](https://link.springer.com/chapter/10.1007/978-3-642-21064-8_13);
 * With regards to rescue unit assignments, our adopted representation is based on the approach proposed by the [OASIS project](https://cordis.europa.eu/project/rcn/92923_en.html).
 
