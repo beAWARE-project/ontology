@@ -1,18 +1,6 @@
 # The beAWARE Crisis Management Ontology
 This repository contains the crisis management ontology for the [beAWARE H2020 project](http://beaware-project.eu/) along with the relevant documentation. 
 
-# Table of Contents
-* [Ontology Visualization](#ontology-visualization)
-* [Ontology Scope](#ontology-scope)
-  * [Representing Natural Disasters](#representing-natural-disasters)
-  * [Representing Analyzed Data](#representing-analyzed-data)
-  * [Representing Rescue Team Assignments](#representing-rescue-team-assignments) 
-* [Reuse of Existing Resources](#reuse-of-existing-resources)
-* [Ontology Specifications and Competency Questions](#ontology-specifications-and-competency-questions)
-* [Citation](#citation)
-* [Contact](#contact)
-* [Acknowledgement](#acknowledgement)
-
 ## Ontology Visualization
 All diagrammatic representations here are based on the [Grafoo](http://www.essepuntato.it/static/graffoo/specification/current.html) graphical notation. Alternatively, you can visualize the beAWARE ontology using [WebVOWL](http://vowl.visualdataweb.org/webvowl.html) by clicking [here](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology.owl).
 
